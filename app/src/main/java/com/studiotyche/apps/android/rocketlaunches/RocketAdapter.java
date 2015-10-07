@@ -12,7 +12,12 @@ import java.util.ArrayList;
 /**
  * Created by edwn112 on 05-10-2015.
  */
+
+
 public class RocketAdapter extends ArrayAdapter<Rocket> {
+
+    boolean isLocalTime = false;
+
     public RocketAdapter(Context context, ArrayList<Rocket> rockets) {
         super(context, 0, rockets);
     }
@@ -30,9 +35,19 @@ public class RocketAdapter extends ArrayAdapter<Rocket> {
         TextView date = (TextView) convertView.findViewById(R.id.date);
 
         rocket.setText(rockets.getName());
-        date.setText(rockets.getDate());
+
+        if (isLocalTime) {
+            if (rockets.getNetstamp() == 0)
+                date.setText(rockets.getDate());
+            else
+                date.setText(rockets.getLocalDate());
+        } else
+            date.setText(rockets.getDate());
 
         return convertView;
     }
 
+    public void setLocalTime(boolean localTime) {
+        this.isLocalTime = localTime;
+    }
 }

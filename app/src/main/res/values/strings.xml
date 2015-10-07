@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Rocket Launches</string>
+
+    <string name="action_settings">Settings</string>
+
+    <array name="time_zones">
+
+    </array>
+    <array name="time_values">
+
+    </array>
 </resources>

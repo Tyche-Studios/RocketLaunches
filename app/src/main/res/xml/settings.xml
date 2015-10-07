@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:title="Receive Notifications"
+        android:summary="Do you want to turn on notifications ?"
+        android:key="notifications"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:title="Change To Local Time"
+        android:summary="See the lauch dates in your local time"
+        android:key="localTime"
+        android:defaultValue="false" />
+
+</PreferenceScreen>
