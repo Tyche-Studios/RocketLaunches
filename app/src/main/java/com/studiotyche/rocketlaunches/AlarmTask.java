@@ -1,4 +1,4 @@
-package com.studiotyche.apps.android.rocketlaunches;
+package com.studiotyche.rocketlaunches;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;

@@ -1,18 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'RocketLaunches'
-            keyPassword '9832aA$$'
-            storeFile file('C:/Users/AnudeepSamaiya/Desktop/RocketLaunches.jks')
-            storePassword '9832aA$$'
-        }
-    }
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '23.0.3'
     defaultConfig {
-        applicationId "com.studiotyche.apps.android.rocketlaunches"
+        applicationId "com.studiotyche.rocketlaunches"
         minSdkVersion 10
         targetSdkVersion 23
         versionCode 3

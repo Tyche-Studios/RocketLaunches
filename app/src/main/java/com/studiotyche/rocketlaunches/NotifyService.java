@@ -1,4 +1,4 @@
-package com.studiotyche.apps.android.rocketlaunches;
+package com.studiotyche.rocketlaunches;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -23,7 +23,7 @@ public class NotifyService extends Service {
     }
 
     private static final int NOTIFICATION = 123;
-    public static final String INTENT_NOTIFY = "com.studiotyche.apps.android.rocketlaunches.INTENT_NOTIFY";
+    public static final String INTENT_NOTIFY = "com.studiotyche.rocketlaunches.INTENT_NOTIFY";
     private NotificationManager mNM;
 
     public void onCreate() {
